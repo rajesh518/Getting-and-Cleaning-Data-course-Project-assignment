@@ -20,8 +20,8 @@ The data we had is raw data and is collected  from the accelerometers from the S
 
 Process of steps:
 
-I created a script called run_analysis.R ,first we need to download the dataset(zip) using download.file,we need to read the files using read.table() into R...we need to change the variable for  features of test and training datasets( change the variables of the columns as required for tidy data set) ...after that I had done merging..
+I created a script called "run_analysis.R"(attached in repository) ,first we need to download the dataset(zip) using download.file,we need to read the files using read.table() into R...we need to change the variable for  features of test and training datasets( change the variables of the columns as required for tidy data set) ...after that I had done merging..
 
 After merging testing and training, labels are added and only columns that have to do with mean and standard deviation are kept.
 
-At the end,  created a tidy data set containing the means and std of all the columns per test subject and per activity. This tidy dataset should be written using write.table().attached in repository for reference and the CodeBook.txt file explains the files created to get the tidy data set and process of work.
+At the end,  created a tidy data set containing the means and std of all the columns per test subject and per activity. This tidy dataset should be written using write.table().attached in repository for reference(tidyset2) and the "CodeBook.txt" file explains the files created to get the tidy data set and process of work.
