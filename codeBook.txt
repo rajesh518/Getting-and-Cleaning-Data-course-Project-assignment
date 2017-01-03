@@ -1,0 +1,40 @@
+title :Code Book Template
+by Rajesh
+
+Instructions for this project:
+
+One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Here are the data for the project:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+You should create one R script called run_analysis.R that does the following.
+
+Merges the training and the test sets to create one data set.
+Extracts only the measurements on the mean and standard deviation for each measurement.
+Uses descriptive activity names to name the activities in the data set
+Appropriately labels the data set with descriptive variable names.
+From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+features:'data.frame':	561 obs. of  2 variables:(names )
+activityLabels: str(activityLabels)
+'data.frame':	6 obs. of  2 variables(activityId,Activitytype)namely  "LAYING","SITTING".... 
+x.train.features:'data.frame':	7352 obs. of  561  variables (features for Volunteers)
+y.train.activity:'data.frame':	7352 obs. of  1 variable denoting the activity
+subject.train:'data.frame':	7352 obs. of  1 variable denoting the Id in x.train.features
+subject.test:'data.frame':	2947 obs. of  1 variable denoting the Id in x.test.features
+x.test.feature:'data.frame':	2947 obs. of  561 variables for remaining volunteers
+y.test.activity:'data.frame':	2947 obs. of  1 variable with activityId
+mergeddata :contains the data of both tests and training data
+
+## any other files didn't used ....other than the files mentioned
+
+##list of steps3
+## any other files didn't used ....other than the files mentioned
+*all of the data files was loaded using read.table()....added appropriate column headings required.
+*we had extracted column variables containing only mean and Std
+* A tidy data set was created containing the mean of each feature for each subject and each activity. Thus, subject #1 has 6 rows in the tidy data set (one row for each activity), and each row contains the mean value for each of the 66 features for that subject/activity combination. Since there are 30 subjects, there are a total of 180 rows.
+*Output file was written using write.table()
+
